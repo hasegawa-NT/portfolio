@@ -1,0 +1,77 @@
+$feedly-color: #6CC655;
+
+
+@mixin awesome-icon($icon) {
+ font-family: "Font Awesome 5 Free";
+ font-weight: 900;
+ color: #fff;
+
+ @if $icon == "feedly" {
+  content: "\f143";
+ }
+
+ @else if $icon == "arrow-up" {
+  content: "\f062";
+ }
+ 
+ @else if $icon == "check" {
+  content: "\f00c";
+ }
+
+ @else if $icon == "chevron-right" {
+  content: "\f054";
+ }
+
+ @else if $icon == "chevron-up" {
+  content: "\f077";
+ }
+
+ @else if $icon == "chevron-down" {
+  content: "\f078";
+ }
+
+ @else if $icon == "mail" {
+  content: "\f0e0";
+ }
+
+ @else if $icon == "search" {
+  content: "\f002";
+ }
+
+ @else if $icon == "setting" {
+  content: "\f085";
+ }
+
+ @else if $icon == "bars" {
+  content: "\f0c9";
+ }
+
+ @else if $icon == "external-link" {
+  content: "\f35d";
+ }
+
+ @else if $icon == "minus" {
+  content: "\f068";
+ }
+
+ @else if $icon == "times" {
+  content: "\f00d";
+ }
+ @else if $icon == "blog" {
+  content: "\f781";
+ }
+
+}
+@mixin awesome-sns($sns) {
+ font-family: "Font Awesome 5 Brands";
+ font-weight: 900;
+ color: #fff;
+
+ @if $sns == "twitter" {
+  content: "\f099";
+ }
+ @else if $sns == "git" {
+  content: "\f092";
+ }
+ 
+}

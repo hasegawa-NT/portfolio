@@ -1,0 +1,266 @@
+/* reset css */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* / reset css */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6em;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #0000ff;
+}
+
+a:visited {
+  color: #800080;
+}
+
+a:focus, a:hover {
+  border-bottom: 1px solid #0000ff;
+  text-decoration: none;
+}
+
+a:active {
+  color: #0000ff;
+}
+
+img,
+iframe {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left top;
+     object-position: left top;
+  vertical-align: bottom;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+}
+
+button:hover, button:focus {
+  background-color: #0000ff;
+}
+
+button:focus {
+  outline: 1px solid #0000ff;
+}
+
+button:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+/* / base css */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+
+/* header */
+.header {
+  width: 100%;
+  max-width: 1280px;
+  position: relative;
+  z-index: 10;
+}
+
+.header-wrap {
+  max-width: 100%;
+  position: absolute;
+  padding: 2vh 4vw;
+  top: 0;
+  right: 1%;
+}
+
+.site-title {
+  color: #070B0D;
+  margin-bottom: 8px;
+  font-size: 2.4rem;
+}
+
+@media only screen and (min-width: 1280px) {
+  .header-wrap {
+    right: -10%;
+  }
+  .site-title {
+    font-size: 4rem;
+  }
+}
+
+/* gnav */
+.gnav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gnav-item {
+  margin-right: 16px;
+}
+
+.gnav-link {
+  color: #070B0D;
+}
+
+@media only screen and (max-width: 1279px) {
+  .gnav-link span {
+    display: none;
+  }
+  .twitter::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    color: #fff;
+    content: "\f099";
+  }
+  .git::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    color: #fff;
+    content: "\f092";
+  }
+  .blog::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #fff;
+    content: "\f781";
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .gnav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space- between;
+        -ms-flex-pack: space- between;
+            justify-content: space- between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gnav-link {
+    color: #070B0D;
+  }
+}
+
+/* gnav */
+/* carousel */
+.carousel {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* carousel */
+/* footer */
+.footer {
+  height: 50px;
+}
+
+/* footer */
+/*# sourceMappingURL=style.css.map */

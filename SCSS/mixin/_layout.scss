@@ -1,0 +1,19 @@
+@mixin horizontal-align($space) {// 水平方向に中央揃え
+  // display: block;
+  // width: 100%;
+  // margin: 0 auto;
+  display: flex;
+  justify-content: space-$space;
+  align-items: center;
+}
+
+%vertical-align {// 垂直方向に中央揃え
+  align-items: center;
+}
+
+%centering {// 上下左右中央揃え
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

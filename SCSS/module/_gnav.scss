@@ -1,0 +1,54 @@
+/* gnav */
+.gnav {
+ 
+ &-list {
+  display: flex;
+ }
+ &-item {
+  margin-right: 16px;
+ }
+
+ &-link {
+  color: $main-color;
+
+ }
+ 
+}
+
+
+@include mq('tab') {
+ .gnav {
+
+  &-link {
+  
+   span {
+    display: none;
+   }
+  }
+ }
+ .twitter::before {
+  @include awesome-sns(twitter);
+ }
+ 
+ .git::before {
+  @include awesome-sns(git);
+ }
+ 
+ .blog::before {
+  @include awesome-icon(blog);
+ }
+}
+
+@include mq('pc') {
+  .gnav {
+   
+   &-list {
+    @include horizontal-align(between);
+   }
+
+   &-link {
+    color: $main-color;
+   }
+ }
+}
+/* gnav */
