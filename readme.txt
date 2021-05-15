@@ -1,0 +1,4 @@
+- 意識した点
+ - 可読性を高めるために、font-size:16px以上にし、Google Fontを導入した。
+ - 大まかなレイアウトをXDで作成。 https://xd.adobe.com/view/416e3e86-df85-4036-907f-a92655ee74f9-143d/
+ - Bootstrapでcarouselを導入。

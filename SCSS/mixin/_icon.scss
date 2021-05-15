@@ -4,6 +4,8 @@ $feedly-color: #6CC655;
 @mixin awesome-icon($icon) {
  font-family: "Font Awesome 5 Free";
  font-weight: 900;
+ font-size: 1.5em;
+ 
  color: #fff;
 
  @if $icon == "feedly" {
@@ -65,6 +67,8 @@ $feedly-color: #6CC655;
 @mixin awesome-sns($sns) {
  font-family: "Font Awesome 5 Brands";
  font-weight: 900;
+ font-size: 1.5em;
+
  color: #fff;
 
  @if $sns == "twitter" {
