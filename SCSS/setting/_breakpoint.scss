@@ -1,0 +1,45 @@
+// breakpoint https://haniwaman.com/breakpoint/
+ // レイアウト幅
+ $layout-width-inner: 1280px;
+
+ // ブレイクポイント
+ $breakpoints: (
+  "sp": "only screen and (max-width: 767px)",
+  "tab": "only screen and (max-width: #{$layout-width-inner - 1px})",
+  "pc": "only screen and (min-width: #{$layout-width-inner})"
+ );
+
+ // mixin
+ @mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+   @content;
+ 
+  }
+ }
+// breakpoint
+
+@mixin sp {
+ @media screen and (min-width: 320px) and (max-width: 767px) {
+     @content;
+ }
+}
+@mixin less-than-tablet {
+ @media screen and (max-width: 767px) {
+     @content;
+ }
+}
+@mixin tablet {
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
+     @content;
+ }
+}
+@mixin more-than-tablet {
+ @media screen and (min-width: 768px) {
+     @content;
+ }
+}
+@mixin pc {
+ @media screen and (min-width: 1024px) {
+     @content;
+ }
+}

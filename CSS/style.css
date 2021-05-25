@@ -1,4 +1,4 @@
-/* reset css */
+/* RESET */
 *,
 *::before,
 *::after {
@@ -77,13 +77,18 @@ select {
   }
 }
 
-/* / reset css */
+/* RESET */
+/* SETTING */
 html {
   font-size: 62.5%;
 }
 
 body {
   font-size: 1.6em;
+}
+
+body {
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
 }
 
 a {
@@ -145,7 +150,7 @@ button:active {
           transform: scale(0.99);
 }
 
-/* / base css */
+/* SETTING */
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,10 +163,7 @@ button:active {
           align-items: center;
 }
 
-body {
-  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
-}
-
+/* MODULE */
 /* header */
 .header {
   width: 100%;
@@ -253,17 +255,21 @@ body {
 }
 
 /* gnav */
-/* carousel */
-.carousel {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-/* carousel */
+/* main */
+/* main */
 /* footer */
 .footer {
   height: 50px;
 }
 
 /* footer */
+/* about */
+/* about */
+/* contact */
+/* contact */
+/* MODULE */
+/* ANIMATION */
+/* ANIMATION */
+/* OBJECT */
+/* OBJECT */
 /*# sourceMappingURL=style.css.map */

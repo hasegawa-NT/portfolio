@@ -64,18 +64,3 @@ $feedly-color: #6CC655;
  }
 
 }
-@mixin awesome-sns($sns) {
- font-family: "Font Awesome 5 Brands";
- font-weight: 900;
- font-size: 1.5em;
-
- color: #fff;
-
- @if $sns == "twitter" {
-  content: "\f099";
- }
- @else if $sns == "git" {
-  content: "\f092";
- }
- 
-}

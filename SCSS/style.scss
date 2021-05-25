@@ -1,19 +1,39 @@
 @charset "utf-8";
-@import "setting/_config.scss";
 
-@import "base/_reset.scss";
-@import "base/_base.scss";
+/* RESET */
+ @import "RESET/_reset.scss";
+/* RESET */
+ 
+/* SETTING */
+ @import "SETTING/_color.scss";
+ @import "SETTING/_typography.scss";
+ @import "SETTING/_base.scss";
+ @import "SETTING/_breakpoint.scss";
+ @import "SETTING/_icon.scss";
+ @import "SETTING/_sns.scss";
+/* SETTING */
+  
+// LAYOUT
+ @import "LAYOUT/_flex.scss";
+ @import "LAYOUT/_layout.scss";
+// LAYOUT
 
-@import "mixin/_layout";
-@import "mixin/_font.scss";
-@import "mixin/_icon.scss";
-@import "mixin/_animation.scss";
+/* MODULE */
+ @import "MODULE/_header.scss";
+ @import "MODULE/_gnav.scss";
+ @import "MODULE/_main.scss";
+ @import "MODULE/_footer.scss";
+ @import "MODULE/_about.scss";
+ @import "MODULE/_contact.scss";
+/* MODULE */
+ 
+/* ANIMATION */
 
-
-@import "module/_header.scss";
-@import "module/_gnav.scss";
-@import "module/_carousel.scss";
-@import "module/_footer.scss";
+/* ANIMATION */
+ 
+/* OBJECT */
+ 
+/* OBJECT */
 
 
 
