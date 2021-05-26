@@ -40,6 +40,10 @@
    - _slide.scss
    - _bounce.scss
    - _underline.scss
+  
+  - ?PAGES?
+   - about.scss
+   - contact.scss
 
   - MODULE
    _header.scss
