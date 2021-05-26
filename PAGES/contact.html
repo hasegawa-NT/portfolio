@@ -16,15 +16,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- style.css -->
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>このサイトについて</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>自己紹介</title>
   </head>
   <body>
    
 	<div class="container">
 		<header class="header">
-			<h1 class="site-title">はせがわのポートフォリオ</h1>
-			
+		
+			<h1 class="site-title">はせがわ ポートフォリオ</h1>
+	
 			<button class="header-button">
 				<span class="bar bar_top"></span>
 				<span class="bar bar_middle"></span>
@@ -35,37 +36,36 @@
 
 		<nav class="gnav">
 			<ul class="gnav-list">
-				<li class="gnav-item"><a aria-label="トップページへのリンク" class="gnav-link current" href="#!">トップ</a></li>
-				<li class="gnav-item"><a aria-label="紹介ページへのリンク" class="gnav-link" href="./PAGES/about.html">紹介</a></li>
-				<li class="gnav-item"><a aria-label="実績ページへのリンク" class="gnav-link" href="./PAGES/portfolio.html">実績</a></li>
-				<li class="gnav-item"><a aria-label="お問い合わせページへのリンク" class="gnav-link" href="#!">お問い合わせ</a></li>
+				<li class="gnav-item"><a aria-label="トップページへのリンク" class="gnav-link" href="../index.html">トップ</a></li>
+				<li class="gnav-item"><a aria-label="紹介ページへのリンク" class="gnav-link" href="./about.html">紹介</a></li>
+				<li class="gnav-item"><a aria-label="実績ページへのリンク" class="gnav-link" href="./portfolio.html">実績</a></li>
+				<li class="gnav-item current"><a aria-label="お問い合わせページへのリンク" class="gnav-link" href="#!">お問い合わせ</a></li>
 			</ul>
 		</nav>
 		<main class="main">
 			
-			<article class="article">
+			<article class="article contact">
+    <h2 class="article-title">お問い合わせ</h2>
+				
+				<form class="form" action="post" id="form">
+     
+     <div class="name-wrap">
+      <label class="form-label required" for="name">氏名</label>
+      <input required class="form-input" type="text" id="name">
+     </div><!-- name-wrap -->
 
-				<section class="section introduction">
-					<h2 class="section-title">このサイトについて</h2>
-					<p class="section-text">稼ぐ力を身につけるためにWeb制作を独学しました。</p>
-					<p class="section-text">学習したことをアウトプットしたものが当Webサイトです。</p>
-					<p class="section-text">御用がありましたら、<a aria-label="お問い合わせページへのリンク" href="#!">お問い合わせ</a>へどうぞ!</p>
-				</section><!-- introduction -->
+     <div class="mail-wrap">
+      <label class="form-label required" for="mail">メールアドレス</label>
+      <input required class="form-input" type="email" id="mail">
+     </div><!-- name-wrap -->
 
-				<section class="section twitter">
-					<h2 class="section-title">Twitter</h2>
-					<p class="section-text">日々の学習記録を発信しています。</p>
-					<a aria-label="Twitterへのリンク" href="#!" class="btn section-link"><span>Twitter</span></a>
-				</section><!-- twitter -->
-					
-				<section class="section blog">
-					<h2 class="section-title">ブログ</h2>
-					<p class="section-text">薬剤師向けの情報発信をしています。</p>
-					<a aria-label="ブログへのリンク" href="#!" class="btn section-link"><span>Blog</span></a>
-				</section><!-- blog -->
+     <div class="detail-wrap">
+      <label class="form-label" for="detail">お問い合わせ内容</label>
+      <textarea class="form-input" type="text" id="detail"></textarea>
+     </div><!-- detail-wrap -->
 
+    </form>		
 			</article>
-			
 			
 		</main>
 
