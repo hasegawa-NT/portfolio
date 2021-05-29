@@ -1,0 +1,13 @@
+.section {
+ &-title {
+  font-size: $heading-size-sp;
+ }
+}
+
+@include mq('pc') {
+ .section {
+  &-title {
+   font-size: $heading-size-pc;
+  }
+ }
+}
