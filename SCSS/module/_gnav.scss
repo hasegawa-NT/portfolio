@@ -1,54 +1,41 @@
-/* gnav */
 .gnav {
- 
- &-list {
-  display: flex;
- }
- &-item {
-  margin-right: 16px;
- }
 
- &-link {
-  color: $main-color;
-
- }
- 
 }
-
 
 @include mq('tab') {
  .gnav {
-
-  &-link {
-  
-   span {
-    display: none;
-   }
+  // transform: translateX(-100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-item {
+    margin-bottom: 2rem;
   }
  }
- .twitter::before {
-  @include awesome-sns(twitter);
- }
  
- .git::before {
-  @include awesome-sns(git);
- }
- 
- .blog::before {
-  @include awesome-icon(blog);
- }
 }
 
 @include mq('pc') {
   .gnav {
    
-   &-list {
+    &-list {
     @include horizontal-align(between);
-   }
+    
+    display: flex;
+        &-item {
+        margin-right: 16px;
+        }
 
-   &-link {
-    color: $main-color;
-   }
- }
+      }
+    &-link {
+      color: $main-color;
+    }
+}
 }
 /* gnav */
