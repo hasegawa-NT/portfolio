@@ -19,9 +19,12 @@
 // LAYOUT
 
 /* MODULE */
+ @import "MODULE/_wrap.scss";
  @import "MODULE/_header.scss";
  @import "MODULE/_gnav.scss";
  @import "MODULE/_main.scss";
+ @import "MODULE/_article.scss";
+ @import "MODULE/_section.scss";
  @import "MODULE/_footer.scss";
  @import "MODULE/_about.scss";
  @import "MODULE/_contact.scss";

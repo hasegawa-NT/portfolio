@@ -1,4 +1,6 @@
+@charset "UTF-8";
 /* RESET */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&display=swap");
 *,
 *::before,
 *::after {
@@ -85,10 +87,13 @@ html {
 
 body {
   font-size: 1.6em;
+  font-family: ‘Noto Sans’, ‘Noto Sans JP’, sans-serif;
 }
 
 body {
   font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+  letter-spacing: .07em;
+  line-height: 1.5;
 }
 
 a {
@@ -164,76 +169,41 @@ button:active {
 }
 
 /* MODULE */
+.wrap {
+  padding: 0 4vw;
+  position: relative;
+}
+
 /* header */
 .header {
   width: 100%;
-  max-width: 1280px;
-  position: relative;
-  z-index: 10;
-}
-
-.header-wrap {
-  max-width: 100%;
   position: absolute;
-  padding: 2vh 4vw;
   top: 0;
-  right: 1%;
-}
-
-.site-title {
-  color: #070B0D;
-  margin-bottom: 8px;
-  font-size: 2.4rem;
-}
-
-@media only screen and (min-width: 1280px) {
-  .header-wrap {
-    right: -10%;
-  }
-  .site-title {
-    font-size: 4rem;
-  }
-}
-
-/* gnav */
-.gnav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.gnav-item {
-  margin-right: 16px;
-}
-
-.gnav-link {
-  color: #070B0D;
+  left: 0;
 }
 
 @media only screen and (max-width: 1279px) {
-  .gnav-link span {
-    display: none;
+  .gnav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
-  .twitter::before {
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 900;
-    font-size: 1.5em;
-    color: #fff;
-    content: "\f099";
+  .gnav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .git::before {
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 900;
-    font-size: 1.5em;
-    color: #fff;
-    content: "\f092";
-  }
-  .blog::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 1.5em;
-    color: #fff;
-    content: "\f781";
+  .gnav-item {
+    margin-bottom: 2rem;
   }
 }
 
@@ -248,6 +218,10 @@ button:active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    display: flex;
+  }
+  .gnav-list-item {
+    margin-right: 16px;
   }
   .gnav-link {
     color: #070B0D;
@@ -257,6 +231,26 @@ button:active {
 /* gnav */
 /* main */
 /* main */
+.article-title {
+  font-size: 2.4rem;
+}
+
+@media only screen and (min-width: 1280px) {
+  .article-title {
+    font-size: 4rem;
+  }
+}
+
+.section-title {
+  font-size: 2.2rem;
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-title {
+    font-size: 3.1rem;
+  }
+}
+
 /* footer */
 .footer {
   height: 50px;

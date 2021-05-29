@@ -1,0 +1,13 @@
+.article {
+ &-title {
+  font-size: $title-size-sp;
+ }
+}
+
+@include mq('pc') {
+ .article {
+  &-title {
+   font-size: $title-size-pc;
+  }
+ }
+}
