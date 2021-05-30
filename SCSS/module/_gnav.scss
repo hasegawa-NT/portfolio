@@ -1,21 +1,21 @@
-.gnav {
-
-}
+// .gnav {}
 
 @include mq('tab') {
  .gnav {
-  // transform: translateX(-100%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  &-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+   // transform: translateX(-100%);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   background-color: rgba($color: #000000, $alpha: .5);
+   
+   display: none;
+  // &-list {}
+
   &-item {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5em;
   }
  }
  
@@ -23,16 +23,19 @@
 
 @include mq('pc') {
   .gnav {
-   
-    &-list {
-    @include horizontal-align(between);
-    
-    display: flex;
-        &-item {
-        margin-right: 16px;
-        }
+    position: absolute;
+    top: -17%;
+    right: 10%;
+    transform: translate(-17%, 10%);
 
-      }
+    &-list {
+      @include horizontal-align(between);
+    }
+
+    &-item {
+      margin-right: 2rem;
+    }
+
     &-link {
       color: $main-color;
     }
