@@ -1,12 +1,19 @@
-.section {
- &-title {
-  font-size: $heading-size-sp;
-  font-weight: bold;
-  margin-bottom: .5rem;
+@include mq('tab') {
+ .section {
+  &-title {
+   font-size: $heading-size-sp;
+   font-weight: bold;
+   margin-bottom: .5rem;
+  }
+  &-wrap {
+   display: flex;
+   align-items: flex-end;
+  }
+  &-link {
+   margin-right: 2%;
+  }
  }
- 
 }
-
 
 @include mq('pc') {
  .section {
@@ -15,3 +22,4 @@
   }
  }
 }
+

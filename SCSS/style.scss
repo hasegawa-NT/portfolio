@@ -26,11 +26,18 @@
  @import "MODULE/_article.scss";
  @import "MODULE/_section.scss";
  @import "MODULE/_footer.scss";
+ @import "MODULE/_top.scss";
  @import "MODULE/_about.scss";
  @import "MODULE/_contact.scss";
-/* MODULE */
+ /* MODULE */
  
-/* ANIMATION */
+ /* ANIMATION */
+ @import "ANIMATION/_bounce.scss";
+ @import "ANIMATION/_fade.scss";
+ @import "ANIMATION/_scale.scss";
+ @import "ANIMATION/_slide.scss";
+ @import "ANIMATION/_toggle.scss";
+ @import "ANIMATION/_underline.scss";
 
 /* ANIMATION */
  

@@ -1,0 +1,50 @@
+@include mq('tab') {
+ .btn {
+  width: 50px;
+  height: 50px;
+  &:focus, &:hover {
+   border: 1px solid $link-color;
+   transform: scale(1.1);
+   transition: .1s ease-in-out;
+  }
+  
+  span{
+   display: none;
+  }
+
+  &_twitter {
+   background-color: $twitter-color;
+   position: relative;
+   &::before {
+    @include awesome-sns(twitter, 2rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+  }
+
+  &_blog {
+   background-color: #559D99;
+   position: relative;
+   &::before {
+    @include awesome-icon(blog, 2rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+  }
+  
+ }
+}
+
+@include mq('pc') {
+ .btn {
+
+  span {
+   font-size: 1.6rem;
+  }
+ }
+
+}

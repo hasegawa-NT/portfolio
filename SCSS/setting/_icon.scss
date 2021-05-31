@@ -1,12 +1,9 @@
-$feedly-color: #6CC655;
-
-
-@mixin awesome-icon($icon) {
+@mixin awesome-icon($icon, $font-size) {
  font-family: "Font Awesome 5 Free";
  font-weight: 900;
- font-size: 1.5em;
+ font-size: $font-size;
  
- color: #fff;
+ color: #ffffff;
 
  @if $icon == "feedly" {
   content: "\f143";
@@ -64,3 +61,16 @@ $feedly-color: #6CC655;
  }
 
 }
+
+// 使い方
+// &_blog {
+//  background-color: #559D99;
+//  position: relative;
+//  &::before {
+//   @include awesome-icon(blog, 2rem);
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//  }
+// }

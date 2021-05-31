@@ -1,7 +1,8 @@
 /* main */
 .main {
  max-width: $layout-width-inner;
- margin: 120px auto;
+ margin: 120px auto 0;
+ position: absolute;
 }
 
 @include mq('tab') {
@@ -13,6 +14,14 @@
 @include mq('pc') {
  .main {
   padding: 0 10vw;
+  
+  &_top {
+   right: 10%;
+   // 位置が微妙
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: auto auto auto;
+  }
  }
 }
 /* main */

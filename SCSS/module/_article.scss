@@ -6,8 +6,15 @@
 
 @include mq('pc') {
  .article {
+  
   &-title {
    font-size: $title-size-pc;
   }
+  
+  &_top {
+   grid-row: 1 / 4;
+   grid-column: 1 / 4;
+  }
  }
 }
+

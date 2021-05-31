@@ -9,11 +9,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
-  // 見やすいくするため 後で消す
-  // background-color: #000000;
-  // opacity: .5;
-  // 見やすいくするため 後で消す
 
   &-button {
     width: 50px;
@@ -41,13 +36,13 @@
   .bar {
 
     &_top {
-      transform: translateY(20px) rotate(45deg);
+      transform: translate(2px, 22px) rotate(45deg);
     }
     &_middle {
       opacity: 0;
     }
     &_bottom {
-      transform: translateY(-20px) rotate(-45deg);
+      transform: translate(2px, -20px) rotate(-45deg);
     }
   }
 }
