@@ -1,3 +1,38 @@
 /* about */
+.like {
+
+ &-item {
+  
+  &::before {
+   display: inline-block;
+   margin-right: 2.5%;
+  }
+  &_dog {
+   &::before {
+    @include awesome-icon(dog, 2rem);
+    color: #000;
+   }
+   
+  }
+  &_science {
+   &::before {
+    @include awesome-icon(flask, 2rem);
+    color: blue;
+    padding-right: 1%;
+   }
+   
+  }
+  &_knowledge {
+   &::before {
+    @include awesome-icon(lightbulb, 2rem);
+    color: yellow;
+    padding-right: 2%;
+   }
+   
+  }
+  
+}
+}
+
 
 /* about */

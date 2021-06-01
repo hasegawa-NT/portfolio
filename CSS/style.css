@@ -139,10 +139,6 @@ button {
 }
 
 button:hover, button:focus {
-  background-color: #0000ff;
-}
-
-button:focus {
   outline: 1px solid #0000ff;
 }
 
@@ -175,9 +171,16 @@ button:active {
   background-blend-mode: lighten;
 }
 
+.wrap_about {
+  height: 100vh;
+  background: url("../IMAGES/background_about.jpg") center/cover no-repeat rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+}
+
 /* header */
 .header {
   width: 100%;
+  z-index: 20;
   position: fixed;
   top: 0;
   left: 0;
@@ -200,11 +203,18 @@ button:active {
   position: relative;
 }
 
+@media only screen and (min-width: 768px) {
+  .header-button {
+    display: none;
+  }
+}
+
 .bar {
   position: absolute;
   left: 2px;
   width: 45px;
   border: 2px solid #000000;
+  z-index: 50;
 }
 
 .bar_top {
@@ -217,6 +227,10 @@ button:active {
 
 .bar_bottom {
   bottom: 5%;
+}
+
+.js-clicked .bar {
+  z-index: 20;
 }
 
 .js-clicked .bar_top {
@@ -250,8 +264,12 @@ button:active {
             align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: -10;
+  }
+  .gnav.js-show {
+    z-index: 10;
   }
   .gnav-item {
     margin-bottom: 1.5em;
@@ -261,10 +279,11 @@ button:active {
 @media only screen and (min-width: 768px) {
   .gnav {
     position: absolute;
-    top: -17%;
+    z-index: 20;
+    top: 1%;
     right: 10%;
-    -webkit-transform: translate(-17%, 10%);
-            transform: translate(-17%, 10%);
+    -webkit-transform: translate(1%, 10%);
+            transform: translate(1%, 10%);
   }
   .gnav-list {
     display: -webkit-box;
@@ -423,6 +442,40 @@ button:active {
 }
 
 /* about */
+.like-item::before {
+  display: inline-block;
+  margin-right: 2.5%;
+}
+
+.like-item_dog::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #ffffff;
+  content: "\f6d3";
+  color: #000;
+}
+
+.like-item_science::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #ffffff;
+  content: "\f0c3";
+  color: blue;
+  padding-right: 1%;
+}
+
+.like-item_knowledge::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #ffffff;
+  content: "\f0eb";
+  color: yellow;
+  padding-right: 2%;
+}
+
 /* about */
 /* contact */
 /* contact */

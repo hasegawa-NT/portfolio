@@ -56,8 +56,21 @@
  @else if $icon == "times" {
   content: "\f00d";
  }
+ 
  @else if $icon == "blog" {
   content: "\f781";
+ }
+
+ @else if $icon == "flask" {
+  content: "\f0c3";
+ }
+
+ @else if $icon == "lightbulb" {
+  content: "\f0eb";
+ }
+
+ @else if $icon == "dog" {
+  content: "\f6d3";
  }
 
 }
