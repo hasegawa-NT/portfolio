@@ -45,10 +45,7 @@ button {
   
   &:hover,
   &:focus {
-    background-color: $active-color;
-  }
-
-  &:focus {
+    // border: 1px solid $active-color;
     outline: 1px solid $active-color;
   }
 

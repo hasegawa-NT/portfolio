@@ -1,6 +1,7 @@
 /* header */
 .header {
   width: 100%;
+  z-index: 20;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,11 +17,21 @@
     position: relative;
   }
 }
+
+@include mq('pc') {
+  .header {
+    
+    &-button {
+      display: none;
+    }
+  }
+}
 .bar {
   position: absolute;
   left: 2px;
   width: 45px;
   border: 2px solid #000000;
+  z-index: 50;
   &_top {
     top: 5%;
   }
@@ -32,9 +43,11 @@
   }
 }
 
-.js-clicked {
-  .bar {
 
+.js-clicked {
+
+  .bar {
+    z-index: 20;
     &_top {
       transform: translate(2px, 22px) rotate(45deg);
     }
@@ -46,3 +59,4 @@
     }
   }
 }
+
