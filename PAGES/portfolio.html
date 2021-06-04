@@ -23,9 +23,16 @@
 
 <body>
 
-	<div class="wrap">
+	<div class="wrap wrap_portfolio">
 		<header class="header">
-
+			<nav class="gnav">
+				<ul class="gnav-list">
+					<li class="gnav-item"><a aria-label="トップページへのリンク" class="gnav-link" href="../index.html">トップ</a></li>
+					<li class="gnav-item"><a aria-label="紹介ページへのリンク" class="gnav-link" href="./about.html">紹介</a></li>
+					<li class="gnav-item gnav-item_current" aria-label="現在のページ">実績</li>
+					<li class="gnav-item"><a aria-label="お問い合わせページへのリンク" class="gnav-link" href="./contact.html">お問い合わせ</a></li>
+				</ul>
+			</nav>
 			<button class="header-button">
 				<span class="bar bar_top"></span>
 				<span class="bar bar_middle"></span>
@@ -34,14 +41,7 @@
 
 		</header>
 
-		<nav class="gnav">
-			<ul class="gnav-list">
-				<li class="gnav-item"><a aria-label="トップページへのリンク" class="gnav-link" href="../index.html">トップ</a></li>
-				<li class="gnav-item"><a aria-label="紹介ページへのリンク" class="gnav-link" href="./about.html">紹介</a></li>
-				<li class="gnav-item"><a aria-label="実績ページへのリンク" class="gnav-link current" href="#!">実績</a></li>
-				<li class="gnav-item"><a aria-label="お問い合わせページへのリンク" class="gnav-link" href="./contact.html">お問い合わせ</a></li>
-			</ul>
-		</nav>
+		
 		<main class="main">
 
 			<article class="article portfolio">
@@ -101,7 +101,7 @@
 		<footer class="footer">
 			<p class="copyright"><small>Created By はせがわ</small></p>
 		</footer>
-	</div><!-- wrap -->
+	</div><!-- wrap wrap_portfolio -->
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -112,7 +112,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 		crossorigin="anonymous"></script>
-	<script src="./JS/script.js"></script>
+	<script src="../JS/script.js"></script>
 </body>
 
 </html>

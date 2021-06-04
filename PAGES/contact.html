@@ -24,11 +24,16 @@
 
 <body>
 
-	<div class="wrap">
+	<div class="wrap wrap_contact">
 		<header class="header">
-
-			<h1 class="site-title">はせがわ ポートフォリオ</h1>
-
+			<nav class="gnav">
+				<ul class="gnav-list">
+					<li class="gnav-item"><a aria-label="トップページへのリンク" class="gnav-link" href="../index.html">トップ</a></li>
+					<li class="gnav-item"><a aria-label="紹介ページへのリンク" class="gnav-link" href="./about.html">紹介</a></li>
+					<li class="gnav-item"><a aria-label="実績ページへのリンク" class="gnav-link" href="./portfolio.html">実績</a></li>
+					<li class="gnav-item gnav-item_current" aria-label="現在のページ">お問い合わせ</li>
+				</ul>
+			</nav>
 			<button class="header-button">
 				<span class="bar bar_top"></span>
 				<span class="bar bar_middle"></span>
@@ -37,49 +42,44 @@
 
 		</header>
 
-		<nav class="gnav">
-			<ul class="gnav-list">
-				<li class="gnav-item"><a aria-label="トップページへのリンク" class="gnav-link" href="../index.html">トップ</a></li>
-				<li class="gnav-item"><a aria-label="紹介ページへのリンク" class="gnav-link" href="./about.html">紹介</a></li>
-				<li class="gnav-item"><a aria-label="実績ページへのリンク" class="gnav-link" href="./portfolio.html">実績</a></li>
-				<li class="gnav-item current"><a aria-label="お問い合わせページへのリンク" class="gnav-link" href="#!">お問い合わせ</a></li>
-			</ul>
-		</nav>
-		<main class="main">
+		
+		<main class="main main_contact">
 
-			<section class="section contact">
-				<h2 class="section-title">お問い合わせ</h2>
+			<article class="article article_contact">
+				<h1 class="article-title">お問い合わせ</h1>
 
-				<form class="form" action="post" id="form">
+				<section class="section">
+					<form class="form" id="form" method="POST" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfrNhlhHioO8Dnv-EZTNQ2wdiWG86l_gmMaUo8HfpsNrTwLXQ/formResponse">
+	
+						<p class="form-widget form-widget_name">
+							<label class="form-label required" for="name">氏名</label>
+							<input required class="form-input" type="text" id="name" name="entry.2078738806" placeholder="">
+						</p><!-- form-widget_name -->
+	
+						<p class="form-widget form-widget_mail">
+							<label class="form-label required" for="mail">メールアドレス</label>
+							<input required class="form-input" type="email" id="mail" name="entry.1406645586">
+						</p><!-- form-widget_mail -->
+	
+						<p class="form-widget form-widget_detail">
+							<label class="form-label required" for="detail">お問い合わせ内容</label>
+							<textarea required class="form-input" type="text" id="detail" name="entry.150983221" cols="30" rows="10"></textarea>
+						</p><!-- form-widget_detail -->
+	
+						<p class="form-widget form-widget_submit">
+							<input class="form-submit" type="submit" value="送信">
+						</p><!-- form-widget_submit -->
+					</form>
+				</section>
 
-					<div class="name-wrap">
-						<label class="form-label required" for="name">氏名</label>
-						<input required class="form-input" type="text" id="name">
-					</div><!-- name-wrap -->
-
-					<div class="mail-wrap">
-						<label class="form-label required" for="mail">メールアドレス</label>
-						<input required class="form-input" type="email" id="mail">
-					</div><!-- mail-wrap -->
-
-					<div class="detail-wrap">
-						<label class="form-label" for="detail">お問い合わせ内容</label>
-						<textarea class="form-input" type="text" id="detail"></textarea>
-					</div><!-- detail-wrap -->
-
-					<div class="submit-wrap">
-						<input type="submit" value="送信">
-					</div><!-- submit-wrap -->
-
-				</form>
-			</section>
+			</article>
 
 		</main>
 
 		<footer class="footer">
 			<p class="copyright"><small>Created By はせがわ</small></p>
 		</footer>
-	</div><!-- wrap -->
+	</div><!-- wrap wrap_contact -->
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -90,7 +90,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 		crossorigin="anonymous"></script>
-	<script src="./JS/script.js"></script>
+	<script src="../JS/script.js"></script>
 </body>
 
 </html>
