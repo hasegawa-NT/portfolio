@@ -1,8 +1,13 @@
 /* main */
 .main {
+ width: 100%;
  max-width: $layout-width-inner;
- margin: 120px auto 0;
- position: absolute;
+ margin: 80px auto;
+ // position: absolute;// headerのposition: fixed;を消したら治った
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 @include mq('tab') {
@@ -16,11 +21,8 @@
   padding: 0 10vw;
   
   &_top {
-   right: 10%;
-   // 位置が微妙
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: auto auto auto;
+   // top: 25%;
+   // right: 1%;
   }
  }
 }

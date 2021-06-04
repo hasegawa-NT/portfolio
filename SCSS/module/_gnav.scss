@@ -3,19 +3,23 @@
 @include mq('tab') {
   .gnav {
     // width: 767px;未満の時は
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba($color: #000000, $alpha: .8);
-    position: absolute;// z-indexのため
+    // display: none;
+    position: absolute;
+    transform: translateX(150px);
+    transition: transform 0 .5s ease-in-out;
     z-index: -10;// 背面に置いておく
-    // transform: translateX(100%);
     &.js-show {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba($color: #000000, $alpha: .8);
+      transform: translateX(0);
+      top: 0;
+      left: 0;
       z-index: 10;// 最前面におく(headerはz-index: 20;)
-      // transform: translateX(0);
     }
     &-item {
       margin-bottom: 1.5em;
@@ -28,9 +32,7 @@
   .gnav {
     position: absolute;
     z-index: 20;
-    top: 1%;
-    right: 10%;
-    transform: translate(1%, 10%);
+    align-items: center;
 
     &-list {
       @include horizontal-align(between);
