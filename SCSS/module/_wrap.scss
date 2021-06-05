@@ -25,6 +25,18 @@
    background-blend-mode:lighten;// 背景画像を透過させる https://note.com/jackinriver/n/n4383898ce0c6
  }
  
+ &_portfolio {
+  height: 100vh;
+  background:
+   url("../IMAGES/background_portfolio.jpg")
+   center / // position https://developer.mozilla.org/ja/docs/Web/CSS/background-position
+   cover // size https://developer.mozilla.org/ja/docs/Web/CSS/background-size
+   no-repeat // repeat
+   rgba(255, 255, 255, .5) // color 背景画像を透過させたい
+   ;
+   background-blend-mode:lighten;// 背景画像を透過させる https://note.com/jackinriver/n/n4383898ce0c6
+ }
+
  &_contact {
   height: 100vh;
   background:
