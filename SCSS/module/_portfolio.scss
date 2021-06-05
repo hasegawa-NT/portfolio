@@ -1,0 +1,31 @@
+@include mq('pc') {
+ .card-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  column-gap: 4%;
+  row-gap: 8%;
+ }
+}
+
+.card {
+ display: flex;
+ flex-direction: column;
+ background-color: #fff;
+ margin-bottom: 8%;
+ padding-bottom: 5%;
+
+
+ &-img {
+
+ }
+
+ &-text {
+  padding: 0 2vw;
+ }
+
+ &-link {
+  padding: 0 2vw;
+  margin-top: auto;
+ }
+}
