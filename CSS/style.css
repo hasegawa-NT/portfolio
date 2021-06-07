@@ -541,13 +541,25 @@ button:active {
   padding-bottom: 5%;
 }
 
+.card-img {
+  margin-bottom: 3%;
+}
+
 .card-text {
   padding: 0 2vw;
+  margin-bottom: 1%;
 }
 
 .card-link {
   padding: 0 2vw;
   margin-top: auto;
+  margin-bottom: 1%;
+  display: block;
+}
+
+.card-link:focus, .card-link:active, .card-link:hover {
+  border-bottom: 0 solid;
+  border: 1px solid #0000ff;
 }
 
 /* contact */
