@@ -16,3 +16,22 @@
   justify-content: center;
   align-items: center;
 }
+.wrap {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer" 
+  ;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px auto 80px;
+}
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
