@@ -23,6 +23,18 @@
    ;
    background-blend-mode:lighten;// 背景画像を透過させる https://note.com/jackinriver/n/n4383898ce0c6
  }
+
+ &_skill {
+  min-height: 100vh;
+  background:
+   url("../IMAGES/background_skill.jpg")
+   center / // position https://developer.mozilla.org/ja/docs/Web/CSS/background-position
+   cover // size https://developer.mozilla.org/ja/docs/Web/CSS/background-size
+   no-repeat // repeat
+   rgba(255, 255, 255, .5) // color 背景画像を透過させたい
+   ;
+   background-blend-mode:lighten;// 背景画像を透過させる https://note.com/jackinriver/n/n4383898ce0c6
+ }
  
  &_portfolio {
   min-height: 100vh;

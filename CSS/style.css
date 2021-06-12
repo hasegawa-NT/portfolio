@@ -199,6 +199,12 @@ button:active {
   background-blend-mode: lighten;
 }
 
+.wrap_skill {
+  min-height: 100vh;
+  background: url("../IMAGES/background_skill.jpg") center/cover no-repeat rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+}
+
 .wrap_portfolio {
   min-height: 100vh;
   background: url("../IMAGES/background_portfolio.jpg") center/cover no-repeat rgba(255, 255, 255, 0.5);
@@ -551,18 +557,7 @@ button:active {
 .card-text {
   padding: 0 2vw;
   margin-bottom: 1%;
-}
-
-.card-link {
-  padding: 0 2vw;
   margin-top: auto;
-  margin-bottom: 1%;
-  display: block;
-}
-
-.card-link:focus, .card-link:active, .card-link:hover {
-  border-bottom: 0 solid;
-  border: 1px solid #0000ff;
 }
 
 /* contact */
